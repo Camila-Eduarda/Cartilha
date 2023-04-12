@@ -1,0 +1,19 @@
+.texto{
+    display: inline-flex;
+}
+#coluna{
+    columns: 2;
+    margin: 30px 80px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    font-size: 20px;
+}
+.imagem{
+  width: 50px;  
+  height: 50px;
+  
+}
