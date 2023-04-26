@@ -7,106 +7,131 @@
     <title>Covid-19</title>
     <link rel="shortcut icon" href="logo-mascara.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <h1>CORONAVÍRUS</h1>
-    <h2>SAIBA COMO SE PROTEGER</h2>
-    <div id="coluna">
-        <div class="texto">
-            <div>
-                <img src="imagens/lavar-maos-50.png" alt="Lavar mãos">
-            </div>
-            <div>
-                <p>
-                    Lave as mãos com frequência, com água e sabão. Ou então higienize com álcool em gel 70%.
-                </p>
-            </div>
-        </div>
-        <div class="texto">
-            <div>
-                <img src="imagens/tosse-50.png" alt="Tossir">
-            </div>
-            <div>
-                <p>
-                    Ao tossir ou espirrar, cubra o nariz e a boca com o braço e não com as mãos.
-                </p>
-            </div>
-        </div>
-        <div class="texto">
-            <div>
-                <img src="imagens/contato-50.png" alt="Contato">
-            </div>
-            <div>
-                <p>
-                    Se estiver doente, evite contato físico com outras pessoas e fique em casa até melhorar.
-                </p>
-            </div>
-        </div>
-        <div class="texto">
-            <div>
-                <img src="imagens/compartilhar-50.png" alt="Compartilhar">
-            </div>
-            <div>
-                <p>
-                    Não compatilhe objetos de uso pessoal, como talheres, pratos e copos.
-                </p>
-            </div>
-        </div>
-        <div class="texto">
-            <div>
-                <img src="imagens/aglomeração-50.png" alt="Aglomeração">
-            </div>
-            <div>
-                <p>
-                    Evite aglomeração e ambientes fechados.
-                </p>
-            </div>
-        </div>
+
+    <div class="cabecalho">
+        <span class="título" onclick="mostrar('proteger')">SAIBA COMO SE PROTEGER</span>
+
+        <span class="título" onclick="mostrar('transmitir')">COMO O CORONAVÍRUS É TRANSMITIDO?</span>
+
+        <span class="título" onclick="mostrar('sintomas')">PRINCIPAIS SINTOMAS</span>
+
+        <span class="título"  onclick="mostrar('prototipo')">PROJETO</span>
     </div>
 
-    <h2>COMO O CORONAVÍRUS É TRANSMITIDO?</h2>
-    <div>
-        <p>
-            A transmissão acontece de uma pessoa doente para outra ou por contato próximo (2 metros ou menos), por meio de:
-        </p>
-    </div>
-    <div>
-        <img class="imagem" src="imagens/goticulas.png" alt="saliva">            
-        <p>Gotículas de saliva</p>
+    <section id="proteger" class="escondido">
+        <div id="coluna">
+            <div class="texto">
+                <div>
+                    <img src="imagens/lavar-maos-50.png" alt="Lavar mãos">
+                </div>
+                <div>
+                    <p>
+                        Lave as mãos com frequência, com água e sabão. Ou então higienize com álcool em gel 70%.
+                    </p>
+                </div>
+            </div>
+            <div class="texto">
+                <div>
+                    <img src="imagens/tosse-50.png" alt="Tossir">
+                </div>
+                <div>
+                    <p>
+                        Ao tossir ou espirrar, cubra o nariz e a boca com o braço e não com as mãos.
+                    </p>
+                </div>
+            </div>
+            <div class="texto">
+                <div>
+                    <img src="imagens/contato-50.png" alt="Contato">
+                </div>
+                <div>
+                    <p>
+                        Se estiver doente, evite contato físico com outras pessoas e fique em casa até melhorar.
+                    </p>
+                </div>
+            </div>
+            <div class="texto">
+                <div>
+                    <img src="imagens/compartilhar-50.png" alt="Compartilhar">
+                </div>
+                <div>
+                    <p>
+                        Não compatilhe objetos de uso pessoal, como talheres, pratos e copos.
+                    </p>
+                </div>
+            </div>
+            <div class="texto">
+                <div>
+                    <img src="imagens/aglomeração-50.png" alt="Aglomeração">
+                </div>
+                <div>
+                    <p>
+                        Evite aglomeração e ambientes fechados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="transmitir" class="escondido">
+        <div class="centralizar">
+            <p>
+                A transmissão acontece de uma pessoa doente para outra ou por contato próximo (2 metros ou menos), por meio de:
+            </p>
+        </div>
+        <div id="imagem">
+            <div class="alinhar">
+                <img class="imagem" src="imagens/goticulas.png" alt="saliva">
+                <p>Gotículas de saliva</p>
+            </div>
+            <div  class="alinhar">
+                <img class="imagem" src="imagens/espirro.png" alt="espirro">
+                <p>Espirro</p>
+            </div>
+            <div class="alinhar">
+                <img class="imagem" src="imagens/tosse.png" alt="tosse">
+                <p>Tosse</p>
+            </div>
+            <div class="alinhar">
+                <img class="imagem" src="imagens/catarro.png" alt="catarro">
+                <p>Catarro</p>
+            </div>
+            <div class="alinhar">
+                <img class="imagem" src="imagens/aperto-de-mao.png" alt="aperto">
+                <p>Toque ou aperto de mãos</p>
+            </div>
+            <div class="alinhar">
+                <img class="imagem" src="imagens/objeto.png" alt="objeto">
+                <p>Objetos ou superfícies contaminadas</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="sintomas" class="escondido">
+        <div class="centralizar">
+            <p >
+                O coronavírus é similar a uma gripe. Geralmente é uma doença leve ou moderada, mas alguns casos podem agravar. Os sintomas mais comuns são:
+            </p>
+            <ul id="center">
+                <li>Tosse</li>
+                <li>Febre</li>
+                <li>Dificuldade para respirar</li>
+            </ul>
+        </div>
+    </section>
 
-        
-        <img class="imagem" src="imagens/espirro.png" alt="espirro">
-        <p>Espirro</p>
-        <img class="imagem" src="imagens/tosse.png" alt="tosse">
-        <p>Tosse</p>
-        <img class="imagem" src="imagens/catarro.png" alt="catarro">
-        <p>Catarro</p>
-        <img class="imagem" src="imagens/aperto-de-mao.png" alt="aperto">
-        <p>Toque ou aperto de mãos</p>
-        <img class="imagem" src="imagens/objeto.png" alt="objeto">
-        <p>Objetos ou superfícies contaminadas</p>
-    </div>
-
-    <h2>PRINCIPAIS SINTOMAS</h2>
-    <div>
-        <p>
-            O coronavírus é similar a uma gripe. Geralmente é uma doença leve ou moderada, mas alguns casos podem agravar. Os sintomas mais comuns são:
-        </p>
-        <ul>
-            <li>Tosse</li>
-            <li>Febre</li>
-            <li>Dificuldade para respirar</li>
-        </ul>
-    </div>
-
-    <h2>PROJETO</h2>
-    <div>
-        <p>
-            Segue abaixo idéia que as empresas, escolas, hospitais, podem adotar para minimizar os riscos de contaminação:
-        </p>
-    </div>
+    <section id="prototipo" class="escondido">
+        <div class="centralizar">
+            <p>
+                Segue abaixo idéia que as empresas, escolas, hospitais, podem adotar para minimizar os riscos de contaminação:
+            </p>
+            <img id="projeto" src="imagens/base-de-ferro-projeto.jpeg" alt="projeto">
+        </div>
+    </section>
 </body>
 
 </html>

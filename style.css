@@ -1,5 +1,6 @@
 .texto{
     display: inline-flex;
+
 }
 #coluna{
     columns: 2;
@@ -8,12 +9,52 @@
 h1{
     text-align: center;
     font-size: 40px;
-}
-h2{
-    font-size: 20px;
+    background-color: rgb(138, 2, 2);
+    color: white;
 }
 .imagem{
   width: 50px;  
   height: 50px;
-  
+}
+#imagem{
+    columns: 6;
+}
+.alinhar{
+   display: block; 
+   text-align: center;
+}
+body{
+    background-color: rgb(110, 109, 109);
+    color: white;  
+}
+#projeto{
+    width: 250px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 20px;
+}
+.escondido{
+    display: none;
+}
+.centralizar{
+    text-align: center;
+    margin-top: 20px;
+}
+#center{
+    display: inline-block;
+    text-align: left;
+}
+.título{
+    background-color: rgb(179, 176, 176);
+    border-radius: 10px; 
+    padding: 5px 20px;   
+    cursor: pointer;
+    color: black;
 }
